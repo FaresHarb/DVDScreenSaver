@@ -22,17 +22,9 @@ int main() {
             SpeedY *= -1;
         }
 
-        if (IsKeyPressed(KEY_M)) {
-            SetTargetFPS(1);
-        }
-        if (IsKeyPressed(KEY_N)) {
-            SetTargetFPS(60);
-        }
-
         BeginDrawing();
         ClearBackground(BLACK);
         DrawRectangle(SquareX, SquareY, SquareSize, SquareSize, WHITE);
-        DrawText(TextFormat("X: %d, Y: %d", SquareX, SquareY), ScreenWidth - 150, 10, 20, WHITE);
         EndDrawing();
     }
     CloseWindow();
